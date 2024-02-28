@@ -1,0 +1,244 @@
+/*ESTRUTURA DO SITE*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, "Trebuchet MS";
+    background: #fff url(../imagens/bg.png);
+    margin: 15px;
+}
+/*INICIO DA AREA DENTRO DO CONTAINER TOPO*/
+#container {
+/*    border: 1px solid red; */
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
+    margin: 0 auto;
+    min-width: 740px;/*min-width = Largura minima*/
+    max-width: 1180px; /*max-width = Largura máxima*/
+}
+
+#topo {
+    position: relative; /*Um elemento com position: relative;é posicionado em relação à sua posição normal.
+    Definir as propriedades superior, direita, inferior e esquerda de um elemento relativamente
+    posicionado fará com que ele seja ajustado fora de sua posição normal. 
+    Outros conteúdos não serão ajustados para caber em qualquer lacuna deixada pelo elemento.*/
+    background: #dbcd87;
+    height: 15.4em; /*Height = Altura*/
+    min-height: 250px; /*min-Height = Altura minima*/
+
+}
+/*ID's são representados por jogo da velha(#)*/
+#area-logo {
+    position: absolute; /*Um elemento with position: absolute;é posicionado em relação ao ancestral 
+    posicionado mais próximo (em vez de posicionado em relação à janela de visualização, como fixo).
+    No entanto; se um elemento posicionado de forma absoluta não tiver ancestrais posicionados, 
+    ele usará o corpo do documento e se moverá junto com a rolagem da página.    
+    Nota: Elementos posicionados de forma absoluta são removidos do fluxo normal e 
+    podem se sobrepor a elementos.*/
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+    width: 100%; /*width = Largura*/
+    height: 250px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/*Class's são representadas por ponto(.)*/
+.logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(../imagens/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -9000px;
+
+}
+
+#area-menu {
+    position: absolute;
+    top: 0;
+    right: 0; /*Propriedade colocou a area de menu à direita da tela dividindo com a area-topo*/
+    background: url(../imagens/topo-imagem-lateral.png)no-repeat;
+    width: 450px; /*width = Largura*/
+    height: 250px;
+    z-index: 2; /*Quando os elementos são posicionados, eles podem se 
+    sobrepor a outros elementos. A z-indexpropriedade especifica a ordem de pilha 
+    de um elemento (qual elemento deve ser colocado na frente ou atrás dos outros).    
+    Um elemento pode ter uma ordem de pilha positiva ou negativa:
+    Um elemento com ordem de pilha maior está sempre acima de um elemento com ordem de pilha menor.
+    Nota: z-index funciona apenas em elementos posicionados 
+    (posição: absoluta, posição: relativa, posição: fixa ou posição: fixa) 
+    e itens flexíveis (elementos que são filhos diretos de display: elementos flexíveis).*/
+}
+#conteudo-menu {
+    margin-left: 90px;
+/*    border: 1px solid red; */
+    margin-right: 15px;
+    padding-top: 15px;
+}
+#menu-locais {
+    border-bottom:  1px solid#b5ab56;
+    border-top: 1px solid #b5ab56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8b8448;
+}
+
+#menu-locais .locais {
+    float: left;
+    line-height: 2.1em; /*A propriedade CSS define a altura de uma caixa de linha. 
+    É comumente usado para definir a distância entre linhas de texto. 
+    Em elementos de nível de bloco, especifica a altura mínima das caixas de linha 
+    dentro do elemento. Em elementos embutidos não substituídos , especifica a altura 
+    usada para calcular a altura da caixa de linha.line-height*/
+
+/*  border: 1px solid red; */
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a.reserva {
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0;
+    padding: 5px 10px;
+    float: right; /*A propriedade CSS floatespecifica como um elemento deve flutuar.
+    A floatpropriedade é usada para posicionar e formatar conteúdo, por exemplo, deixar 
+    uma imagem flutuar à esquerda do texto em um contêiner.
+    A float propriedade pode ter um dos seguintes valores:    
+    left- O elemento flutua à esquerda do seu contêiner
+    right- O elemento flutua à direita do seu contêiner
+    none- O elemento não flutua (será exibido exatamente onde ocorre no texto). Este é o padrão
+    inherit- O elemento herda o valor float de seu pai
+    Em seu uso mais simples, a floatpropriedade pode ser usada para envolver texto em imagens.*/
+
+}
+
+/*BARRA DE NAVEGAÇÃO VERTICAL*/
+
+#menu {
+    margin-top: 15px;
+
+}
+ul {
+/*  margin: 0; -> margim e padding zerados pois já foi zerado no *, no inicio do documento.
+    padding: 0; */
+    list-style: none;
+}
+ul#navegacao {
+    float: left;
+}
+ul#navegacao a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px;
+/*    display: inline;  -> A display propriedade é a propriedade CSS mais importante para controlar o layout.
+A displaypropriedade é usada para especificar como um elemento é mostrado em uma página da web.
+Cada elemento HTML possui um valor de exibição padrão, dependendo do tipo de elemento. 
+O valor de exibição padrão para a maioria dos elementos é blockou inline.
+A displaypropriedade é usada para alterar o comportamento de exibição padrão dos elementos HTML.
+    BUSCAR INFORMAÇÕES DOS VALORES DA PROPRIEDADE DISPLAY EM https://www.w3schools.com/css/css_display_visibility.asp
+*/
+}    
+
+ul#navegacao a:hover {
+    background: #fdf6be;
+}
+.depoimento {
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+/* FIM DA AREA DENTRO DO CONTAINER TOPO*/
+/*AREA DE CONTEUDOS*/
+
+#area-principal {
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+    float: left;
+    width: 50%; /*Layout liquidos*/
+    padding: 15px 0px;
+
+}
+#area-lateral {
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+    float: right;
+    width: 50%;
+    padding: 20px 0px;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+/*    background: red; */
+}
+#rodape {
+    clear: both;
+    padding: 16px;
+    background: #fff url(../imagens/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+}
+/*FORMATAÇÕES DE TEXTOS*/
+
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+/*FORMATANDO A LISTA DE MATERIAS*/
+
+#lista-lateral li {
+    padding: 8px; 
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+
+}
+#lista-lateral li a {
+    text-decoration: none;
+    font-size: 0.8em;
+}
+#lista-lateral li a h3 {
+    font-size: 1.3em;
+    padding: 5px 0;
+    color: #615b2d;
+    background: url(../imagens/ornamento.png) no-repeat center right;
+}
+#lista-lateral li a p {
+     font-size: 0.9em;
+     color: #000;     
+} 
+#lista-lateral li img {
+    float: left;
+    margin-right: 1%;
+}
+#lista-lateral li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
+}
+#nome h4 {    
+    width: 60%; 
+    padding: 10px -15px;
+    margin: -50px 125px;    
+    color: #6e682e;
+    float: left;
+    z-index: 3;    
+    background: #dfd794;
+    font-size: 1em;
+    text-align: center;
+    
+    
+    
+}

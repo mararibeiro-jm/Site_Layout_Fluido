@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Chalé Hotel
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+
+
+
+    </head>
+
+<body>
+    <!--INICIO DO CONTAINER-->
+    <div id="container">
+        <div id="topo"><!--INICIO DO TOPO-->
+
+            <div id="area-logo">
+                <h1 class="logo">
+                    <a href="">Chalé Hotel</a>
+                </h1>
+            </div>
+            
+            <div id="area-menu">
+                <div id="conteudo-menu">
+                    <div id="menu-locais">
+                        <span class="locais">
+                            Rio de Janeiro - São Paulo - Belo 
+                            Horizonte
+                        </span>
+                        <a class="reserva" href="">Reservar</a>
+                        <div style="clear: both;"></div>       <!--A propriedade CSS clearespecifica quais elementos 
+                        podem flutuar ao lado do elemento limpo e em que lado.
+                        Quando usarmos a floatpropriedade e quisermos o próximo elemento abaixo (não à direita ou à esquerda), teremos que usar
+                        a clear propriedade. A clearpropriedade especifica o que deve acontecer com o elemento próximo a um elemento flutuante.
+                        A clearpropriedade pode ter um dos seguintes valores:
+
+                        none- O elemento não é empurrado abaixo dos elementos flutuantes à esquerda ou à direita. Este é o padrão
+                        left- O elemento é empurrado abaixo dos elementos flutuantes à esquerda
+                        right- O elemento é empurrado abaixo dos elementos flutuantes à direita
+                        both- O elemento é empurrado abaixo dos elementos flutuantes esquerdo e direito
+                        inherit- O elemento herda o valor clear de seu pai
+                        Ao limpar floats, você deve combinar clear com float: Se um elemento flutua para a esquerda, 
+                        você deve limpar para a esquerda. Seu elemento flutuante continuará flutuando, mas o elemento limpo 
+                        aparecerá abaixo dele na página da web.
+                        O hack do clearfix
+                        Se um elemento flutuante for mais alto que o elemento que o contém, ele "transbordará" para fora de seu contêiner. 
+                        Podemos então adicionar um hack clearfix para resolver este problema:
+                        O overflow: autoclearfix funciona bem desde que você consiga manter o controle de suas margens e preenchimento 
+                        (caso contrário, você poderá ver barras de rolagem). O novo e moderno hack clearfix , entretanto, é mais seguro de usar, 
+                        e o seguinte código é usado para a maioria das páginas da web:-->
+                    </div>
+
+                    <div id="menu">
+                        <ul id="navegacao">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">História</a></li>
+                            <li><a href="">Imprensa</a></li>
+                            <li><a href="">Gastronomia</a></li>
+                            <li><a href="">Contato</a></li>
+                        </ul>
+
+                        <img class="depoimento" src="imagens/depoimento.png">
+
+                    </div>
+                    <div id="nome">
+                        <h4>Lucimara Tome</h4>
+                    </div>       
+
+                </div>
+            </div>
+
+        </div><!--FIM DO TOPO-->
+
+        <div id="area-principal">
+           <div class="conteudo">
+             <h2>
+                Lorem ipsum dolor sit amet, consectetur
+             </h2>
+
+             <p>
+                adipiscing elit. Sed cursus diam quis neque dictum tempus. 
+                Quisque mi ante, aliquam eu odio ac, ullamcorper lacinia nibh. 
+                Pellentesque eget tortor in tellus vestibulum porta sit amet 
+                non purus. Curabitur eleifend pellentesque vestibulum. 
+                Pellentesque suscipit dolor ut gravida dignissim. 
+                Donec volutpat urna vel turpis efficitur dignissim vitae 
+                sit amet erat. Sed neque felis, bibendum sed lorem at, 
+                consequat varius magna. Phasellus ut magna nec massa fringilla 
+                vehicula vitae nec massa. Etiam ac ligula non dui suscipit 
+                dignissim. Mauris elit odio, rhoncus quis malesuada vel, 
+                porttitor id ligula. 
+             </p>
+
+             <p>
+                Sed euismod ipsum turpis. 
+                Sed eu urna cursus, malesuada diam pretium, accumsan sapien. 
+                Praesent in consequat justo. Integer bibendum justo vel sodales 
+                malesuada. Donec gravida elementum quam.
+             </p>
+
+             <p>
+                Sed euismod ipsum turpis. 
+                Sed eu urna cursus, malesuada diam pretium, accumsan sapien. 
+                Praesent in consequat justo. Integer bibendum justo vel sodales 
+                malesuada. Donec gravida elementum quam.
+             </p>
+           </div>
+        </div>
+
+        <div id="area-lateral">
+            <div class="conteudo">
+                 <ul id="lista-lateral">
+                        <li>
+                            <a href="">
+                                <img src="imagens/apartamento.jpg" width="150"
+                                alt="Apartamento">
+                                <h3>Apartamento</h3>
+                                <p>
+                                Sed eu urna cursus, malesuada diam pretium, accumsan sapien. 
+                                Praesent in consequat justo. Integer bibendum justo vel sodales 
+                                malesuada.
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="imagens/restaurante.jpg" width="150"
+                                alt="Restaurante">
+                                <h3>restaurante</h3>
+                                <p>
+                            Sed eu urna cursus, malesuada diam pretium, accumsan sapien. 
+                            Praesent in consequat justo. Integer bibendum justo vel sodales 
+                            malesuada.
+                            </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="imagens/piscina.jpg" width="150" 
+                                alt="Piscina">
+                                <h3>Piscina</h3>
+                                <p>
+                            Sed eu urna cursus, malesuada diam pretium, accumsan sapien. 
+                            Praesent in consequat justo. Integer bibendum justo vel sodales 
+                            malesuada.
+                            </p>
+                            </a>
+                        </li>
+                 </ul>
+
+            </div>
+        </div>
+
+        <div id="rodape">
+            <span>
+                &copy;Copyright 2000-2020 Chalé Hotel
+            </span>
+        </div>
+
+    </div><!--FIM DO CONTAINER-->
+    
+</body>
+
+</html>
